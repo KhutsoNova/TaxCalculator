@@ -1,0 +1,175 @@
+/*
+CSS styling for the front-end HTML Elements.
+*/
+/* 
+    Created on : 20 Apr 2018, 22:49:49 PM
+    Author     : Khutso Mothapo
+*/
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+div.container {
+    margin-bottom: -120px;
+}
+
+header {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+    height: 100%;
+}
+
+footer {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+    font-family: Verdana, Geneva, sans-serif;
+   
+}
+
+div.heading {
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+}
+
+div.tableInfo {
+    margin-top: -130px;
+}
+    
+div.heading1 {
+    margin-top: 20px;
+}
+
+div.tableCalcualtionTotals {
+    margin-top: -100px;
+}
+
+select {
+    width : 100%;
+}
+
+.button {
+    background-color       : black;
+    border                 : none;
+    color                  : white;
+    padding                : 15px 32px;
+    text-align             : center;
+    text-decoration        : none;
+    display                : inline-block;
+    font-size              : 16px;
+    margin                 : 4px 5px;
+    cursor                 : pointer;   
+}
+
+label {
+    font-family: "Lucida Console", Monaco, monospace;
+}
+
+select#taxYear, select#taxableIncomeType, select#age, select#hasMedicalAid  {
+    width                  : 170pt;  
+}
+
+input#taxableIncome, input#medicalAidContribution {
+    width                  : 138pt;   
+}
+
+input#numberOfDependents, input#outputValues {
+  width                  : 148pt;   
+}
+
+select#taxYear, select#taxableIncomeType, select#age, select#hasMedicalAid,
+input#taxableIncome, input#medicalAidContribution, input#numberOfDependents,
+input#outputValues {
+    height                   : 17pt;
+    line-height              : 14pt;
+    padding-right            : 20pt;
+    text-indent              : 4pt;
+    text-align               : left;
+    vertical-align           : middle;
+    box-shadow               : inset 0 0 3px #606060;
+    border                   : 1px solid #acacac;
+    -moz-border-radius       : 6px;
+    -webkit-border-radius    : 6px;
+    border-radius            : 6px;
+    -webkit-appearance       : none;
+    -moz-appearance          : none;
+    appearance               : none;  
+    font-family              : Arial,  Calibri, Tahoma, Verdana;
+    font-size                : 13pt;
+    font-weight              : 300;
+    color                    : black;
+    cursor                   : pointer;
+    outline                  : none;
+    }
+    
+select#taxYear::-ms-expand, select#taxableIncomeType::-ms-expand, select#age::-ms-expand,
+select#hasMedicalAid::-ms-expand, input#taxableIncome::-ms-expand, input#medicalAidContribution::-ms-expand, 
+input#numberOfDependents::-ms-expand, input#outputValues::-ms-expand {
+        display: none;
+    } 
+    
+select#taxYear option, select#taxableIncomeType option, select#age option, 
+select#hasMedicalAid option, input#taxableIncome value, input#medicalAidContribution value,
+input#numberOfDependents value, input#outputValues value {
+        padding             : 4px 10px 4px 10px;
+        font-size           : 11pt;
+        font-weight         : normal;
+    }
+    
+select#taxYear option[selected], select#taxableIncomeType option[selected], select#age option[selected], 
+select#hasMedicalAid option[selected], input#taxableIncome value, input#medicalAidContribution value,
+input#numberOfDependents value, input#outputValues value { 
+        font-weight:bold
+    }
+    
+select#taxYear option:nth-child(even), select#taxableIncomeType option:nth-child(even), 
+select#age option:nth-child(even), select#hasMedicalAid option:nth-child(even) { 
+        background-color:#f5f5f5; 
+    }
+    
+select#taxYear:hover, select#taxableIncomeType:hover, select#age:hover,  select#hasMedicalAid:hover, 
+input#taxableIncome:hover, input#medicalAidContribution:hover, input#numberOfDependents:hover,
+input#outputValues:hover {
+        font-weight: 700;
+    }
+    
+select#taxYear:focus, select#taxableIncomeType:focus, select#age:focus, select#hasMedicalAid:focus, 
+input#taxableIncome:focus, input#medicalAidContribution:focus, input#numberOfDependents:focus,
+input#outputValues:focus {
+        box-shadow: inset 0 0 5px #000099; font-weight: 600;
+    }
+      
+label#lblSelect { 
+        position: relative; display: inline-block;
+    }
+
+label#lblSelect::after {
+        content                 : "\25bc";
+        position                : absolute;
+        top                     : 0;
+        right                   : 0;
+        bottom                  : 0;
+        width                   : 20pt;
+        line-height             : 20pt;
+        vertical-align          : middle;
+        text-align              : center;
+        background              : black;
+        color                   : #fefefe;
+       -moz-border-radius       : 0 6px 6px 0;
+       -webkit-border-radius    : 0 6px 6px 0;
+        border-radius           : 0 6px 6px 0;
+        pointer-events          : none;
+    }
+
+
+
+
+
